@@ -7,3 +7,6 @@ int *pV; //declara um ponteiro
 pV = &iV; //ponteiro recebe o endereço da variável
 .
 .
+
+extensao para visualização dos grafos
+graphviz (dot)

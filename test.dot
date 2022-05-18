@@ -1,0 +1,4 @@
+graph nome {
+     a -- b -- c;
+     b -- d;
+}

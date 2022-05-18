@@ -25,7 +25,6 @@ Grafo::Grafo(int ordem, bool direcionado, bool arestaPonderada, bool noPonderado
     this->numArestas = 0;
 }
 
-// Destructor
 Grafo::~Grafo()
 {
 
