@@ -1,0 +1,9 @@
+nt *pV; //declara um ponteiro
+int iV (34); //declara um inteiro
+int *pV; //declara um ponteiro
+.
+.
+.
+pV = &iV; //ponteiro recebe o endereço da variável
+.
+.
