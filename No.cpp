@@ -111,7 +111,7 @@ bool No::inserirAresta(int idAresta, float peso)
         if (this->primeiraAresta != nullptr)
         {
             // Allocating the new edge and keeping the integrity of the edge list (Alocando a nova aresta e mantendo a integridade de lista de arestas)
-            Aresta *edge = new Aresta(idAresta, this->getId());
+            Aresta *edge = new Aresta(idAresta);
             edge->setPeso(peso);
             this->ultimaAresta->setProximaAresta(edge);
             this->ultimaAresta = edge;
@@ -119,11 +119,11 @@ bool No::inserirAresta(int idAresta, float peso)
         else
         {
             // Allocating the new edge and keeping the integrity of the edge list
-            this->primeiraAresta = new Aresta(idAresta, this->getId());
+            this->primeiraAresta = new Aresta(idAresta);
             this->primeiraAresta->setPeso(peso);
             this->ultimaAresta = this->primeiraAresta;
         }
-        // cout << "Inseriu Aresta ---------------->>>>" << endl;
+        cout << "Inseriu Aresta ---------------->>>>" << endl;
         return true;
     }
     else
